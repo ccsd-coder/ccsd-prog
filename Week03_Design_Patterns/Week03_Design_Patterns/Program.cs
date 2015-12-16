@@ -10,18 +10,28 @@ namespace Week03_Design_Patterns
     {
         static void Main(string[] args)
         {
-            SendData _sendData = new SendEmail();
-            _sendData._iBridgeComponents = new WebService();
-            _sendData.Send();
-            _sendData._iBridgeComponents = new ThirdPartyAPI();
-            _sendData.Send();
-
+            String msg = "<STRING>";
 
             SendData _sendData2 = new SendSMS();
             _sendData2._iBridgeComponents = new WebService();
-            _sendData2.Send();
+            _sendData2.Send( msg );
             _sendData2._iBridgeComponents = new ThirdPartyAPI();
-            _sendData2.Send();
+            _sendData2.Send( msg );
+
+            A a = new A();
+
+            a.SetA(3);
+
+            B b = new B();
+
+            //b.m_c
+
+            C c = new C();
+
+            a.Debug();
+            b.Debug();
+            c.Debug();
+
         }
     }
 }

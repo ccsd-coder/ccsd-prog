@@ -12,6 +12,6 @@ namespace Week03_Design_Patterns
         // Reference of the Bridge
         public IBridgeComponents _iBridgeComponents;
 
-        public abstract void Send();
+        public abstract void Send( String s );
     }
 }
