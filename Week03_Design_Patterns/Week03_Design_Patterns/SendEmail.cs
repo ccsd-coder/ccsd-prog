@@ -8,10 +8,10 @@ namespace Week03_Design_Patterns
 {
     public class SendEmail : SendData
     {
-        public override void Send()
+        public override void Send( String s )
         {
             // Use the bridge to send the email
-            _iBridgeComponents.Send("Email");
+            _iBridgeComponents.Send( s );
         }
     }
 }

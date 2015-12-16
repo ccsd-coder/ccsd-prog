@@ -8,9 +8,9 @@ namespace Week03_Design_Patterns
 {
     public class SendSMS : SendData
     {
-        public override void Send()
+        public override void Send( String s )
         {
-            _iBridgeComponents.Send("SMS");
+            _iBridgeComponents.Send( s );
         }
     }
 }
