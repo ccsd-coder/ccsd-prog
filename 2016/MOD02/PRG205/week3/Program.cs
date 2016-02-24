@@ -11,7 +11,10 @@ namespace week3
         static void Main(string[] args)
         {
             // My 1st object (the soup) of the class (recipe) A
-            A a = new A(
+            A a = new A();
+            a.Debug();
+
+            Console.Read();
         }
     }
 }
