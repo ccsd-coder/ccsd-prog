@@ -14,6 +14,7 @@ namespace week3
             A a = new A();
             a.Debug();
 
+
             Console.Read();
         }
     }
